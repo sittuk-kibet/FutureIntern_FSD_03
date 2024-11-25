@@ -1,1 +1,181 @@
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+  }
+  
+  /* Container Styling */
+  .container {
+    background: rgba(255, 255, 255, 0.1);
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
+    backdrop-filter: blur(10px); /* Standard property */
+    border-radius: 10px;
+    padding: 20px 30px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  
+  /* Form Styles */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .form-group {
+    text-align: left;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  input[type="text"],
+  input[type="password"],
+  input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.8);
+    color: #333;
+  }
+  
+  input:focus {
+    outline: none;
+    border: 2px solid #6a11cb;
+  }
+  
+  button {
+    background: #6a11cb;
+    border: none;
+    padding: 10px;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  button:hover {
+    background: #2575fc;
+  }
+  
+  /* Welcome Page */
+  h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 1em;
+    margin-bottom: 20px;
+  }
+  
+  .btn {
+    text-decoration: none;
+    color: #fff;
+    background: #6a11cb;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+  }
+  
+  .btn:hover {
+    background: #2575fc;
+  }
+  
+  /* Chat Room */
+  #chat-room {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  #messages {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+    background: rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  
+  .messages div {
+    padding: 10px;
+    margin: 5px 0;
+    background: rgba(255, 255, 255, 0.9);
+    color: #333;
+    border-radius: 5px;
+    word-wrap: break-word;
+  }
+  
+  #message-form {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+  }
+  
+  #message-input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.8);
+  }
+  
+  #message-input:focus {
+    outline: none;
+    border: 2px solid #6a11cb;
+  }
+  
+  .file-upload {
+    margin-top: 10px;
+  }
+  
+  input[type="file"] {
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .container {
+      padding: 15px 20px;
+      max-width: 300px;
+    }
+  
+    h1 {
+      font-size: 1.8em;
+    }
+  
+    p {
+      font-size: 0.9em;
+    }
+  
+    button, .btn {
+      padding: 8px 12px;
+    }
+  }
+  
