@@ -1,5 +1,5 @@
 
-const db = require('./db');
+const db = require('../config/db');
 
 // Save a chat message
 exports.saveMessage = async (roomId, senderId, message) => {

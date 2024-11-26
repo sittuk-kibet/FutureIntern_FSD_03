@@ -1,15 +1,10 @@
+// config/db.js
 const mysql = require('mysql2');
-
-// Create a MySQL connection pool
 const pool = mysql.createPool({
-  host: 'localhost',
-  user: 'root',
-  password: 'password', // Replace with your MySQL root password
-  database: 'chat_app',
-  waitForConnections: true,
-  connectionLimit: 10,
-  queueLimit: 0,
+  host: process.env.DB_HOST,
+  user: process.env.DB_USER,
+  password: process.env.DB_PASSWORD,
+  database: process.env.DB_NAME,
 });
 
-// Export the pool for reuse
-module.exports = pool.promise();
+module.exports = { pool };
